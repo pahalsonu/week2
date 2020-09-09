@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: ths;
+            src: url("unsteady\ oversteer.ttf");
+        }
+        p{
+         font-family: 'ths', sans-serif;;
+        }
+        body{
+            padding: 25px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <label for="txt">Enter the text:</label><br>
+    <input type="text" id='txt'; ><br>
+    <button onclick="myFunction()">Submit</button>
+    <h1>Expected Output</h1>
+    <p id="demo"></p>
+    <script>
+       function myFunction() {
+  var x = document.getElementById("txt").value;
+  document.getElementById("demo").innerHTML = x;
+}
+    </script>
+
+</body>
+</html>
